@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {Post} from '../models/post.model';
 
 @Component({
   selector: 'app-post-list',
@@ -11,7 +12,7 @@ export class PostListComponent implements OnInit {
 //   {title: 'Second Post', content: 'This is the second component'},
 //   {title: 'Third Post', content: 'This is the third component'}
 // ];
- @Input() posts = [];
+ @Input() posts: Post[] = [];
   constructor() { }
 
   ngOnInit(): void {
