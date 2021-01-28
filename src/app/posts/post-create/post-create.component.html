@@ -1,4 +1,12 @@
-<p>Post Page!</p>
-<textarea name="textarea" id="" cols="30" rows="10"></textarea>
-<pre></pre>
-<button class="btn-post">Save Post</button>
+<h1>Post Page!</h1>
+<mat-card>
+  <mat-form-field>
+    <textarea matInput name="textarea" rows="6" [(ngModel)]="enteredValue"></textarea>
+  </mat-form-field>
+  <br>
+  <button
+    mat-raised-button
+    color="accent"
+    class="btn-post" (click)="onAddPost()">Save Post</button>
+</mat-card>
+<p>{{newPost}}</p>
