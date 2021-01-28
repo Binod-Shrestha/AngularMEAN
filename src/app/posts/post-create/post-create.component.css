@@ -1,7 +1,9 @@
 mat-card{
   width: 80%;
   height: auto;
-  margin: 20pt;
+  margin-left: 10%;
+  margin-right: 10%;
+
 }
 textarea{
   width: 100%;
